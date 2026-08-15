@@ -49,7 +49,7 @@ const (
 )
 
 func FormatSize(size int64) string {
-	const unit = 1000
+	const unit = 1024
 	if size < unit {
 		return fmt.Sprintf("%d B", size)
 	}
